@@ -1,0 +1,144 @@
+/* Global styles */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to right, #fefcea, #f1da36);
+  margin: 0;
+  padding: 2rem;
+}
+
+/* Main container */
+.To-Do-App {
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 2rem;
+  max-width: 700px;
+  margin: auto;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Header */
+.To-Do-App h2 {
+  text-align: center;
+  color: #333;
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+/* Input section */
+.add-task {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.add-task input[type="text"],
+.add-task input[type="datetime-local"] {
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  flex: 1;
+  min-width: 200px;
+}
+
+.add-task .add-button {
+  padding: 10px 20px;
+  background-color: #ffd600;
+  color: #222;
+  font-weight: bold;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.add-task .add-button:hover {
+  background-color: #f1c40f;
+}
+
+/* Task Containers */
+.container {
+  margin-bottom: 2rem;
+}
+
+.container h3 {
+  font-size: 1.3rem;
+  color: #444;
+  margin-bottom: 1rem;
+}
+
+/* Task Items */
+.task-list,
+.comp-task-list {
+  list-style: none;
+  padding: 0;
+}
+
+.task-list li,
+.comp-task-list li {
+  background-color: #fff8c6;
+  padding: 1rem;
+  border-radius: 12px;
+  margin-bottom: 10px;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.07);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* Text + datetime */
+.text {
+  font-weight: 500;
+  font-size: 1.1rem;
+  color: #222;
+}
+
+small {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* Buttons inside task */
+.task-list button {
+  padding: 5px 10px;
+  font-size: 0.9rem;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s ease;
+  margin-right: 6px;
+}
+
+.edit-button {
+  background-color: #6ec6ff;
+  color: #fff;
+}
+
+.remove-button {
+  background-color: #ff6b6b;
+  color: #fff;
+}
+
+.edit-button:hover {
+  background-color: #4da6ff;
+}
+
+.remove-button:hover {
+  background-color: #e04848;
+}
+
+/* Up/Down buttons */
+.task-list button:nth-child(n+4):nth-child(-n+5) {
+  background-color: #d3d3d3;
+}
+
+.task-list button:nth-child(n+4):nth-child(-n+5):hover {
+  background-color: #bcbcbc;
+}
+
+/* Checkbox styling */
+input[type="checkbox"] {
+  transform: scale(1.2);
+  cursor: pointer;
+}
